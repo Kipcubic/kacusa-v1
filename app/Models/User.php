@@ -9,8 +9,9 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Support\Str;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
     use HasFactory;
@@ -18,22 +19,35 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected $connection = 'mysql';
+ 
     protected $fillable = [
-        'name',
+        'fname',
+        'lname',
         'email',
         'password',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
+
+    public function getIsAdminAttribute()
+    {
+        return $this->roles->pluck( 'name' )->contains( 'admin' );
+    }
+
+    public function getIsSuperAdminAttribute()
+    {
+        return $this->roles->pluck( 'name' )->contains( 'superadmin' );
+    }
+    public function getIsUserAttribute()
+    {
+        return $this->roles->pluck( 'name' )->contains( 'user' );
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
+
     protected $hidden = [
         'password',
         'remember_token',
@@ -41,21 +55,19 @@ class User extends Authenticatable
         'two_factor_secret',
     ];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
+   
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
 
-    /**
-     * The accessors to append to the model's array form.
-     *
-     * @var array
-     */
+ 
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function getFullNameAttribute(){
+        return ucfirst($this->fname).''.(ucfirst($this->lname));
+    }
+
+
 }
