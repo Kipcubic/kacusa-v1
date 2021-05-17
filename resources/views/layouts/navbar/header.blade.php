@@ -108,6 +108,9 @@
                     <li class="has-submenu">
                         <a href="{{route('user.index')}} "><i class="fas fa-users"></i> Members</a>
                     </li>
+                    <li class="has-submenu">
+                        <a href="{{route('leadership.index')}} "><i class="fas fa-users"></i> Leadership</a>
+                    </li>
 
                 </ul>
                 <!-- End navigation menu -->

@@ -62,7 +62,6 @@ class UserController extends Controller
         $user->roles()->attach($request->role);
 
         // Send Email To Clients With Credentials
-        Mail::to($user->email)->send(new EmailCredentials($user,$password ));
 
         return redirect('/user')->with('success','User Added Successully');
     }

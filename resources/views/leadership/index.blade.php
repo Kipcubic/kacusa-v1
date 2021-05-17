@@ -40,11 +40,11 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
-                {{-- <div class="float-right m-3">
-                    <a href=" {{ route('user.create') }} " class="btn btn-sm btn-info">
+                <div class="float-right m-3">
+                    <a href=" {{ route('leadership.create') }} " class="btn btn-sm btn-info">
                         Create <i class="ion ion-md-add-circle-outline"></i>
                     </a>
-                </div> --}}
+                </div>
                 <div class="card-body">
 
      <x-alert></x-alert>

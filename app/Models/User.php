@@ -66,8 +66,7 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
     public function getFullNameAttribute(){
-        return ucfirst($this->fname).''.(ucfirst($this->lname));
+        return ucfirst($this->fname).' '.(ucfirst($this->lname));
     }
-
 
 }

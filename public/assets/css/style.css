@@ -1,7 +1,5 @@
 /*
-Template Name: Hexzy - Bootstrap 4 Admin Dashboard
-Author: Themesdesign
-File: Main Css File
+
 */
 /*  Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700&amp;display=swap");
@@ -34,14 +32,14 @@ body {
   background: #f8f9fa;
   font-family: "Nunito", sans-serif;
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 html {
   overflow-x: hidden;
   position: relative;
   min-height: 100%;
-  background: #f8f9fa;
+  background: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -147,7 +145,7 @@ a:focus {
 
 .social-links li a {
   -webkit-border-radius: 50%;
-  background: #6cbafa;
+  background: #6ACDE6;
   border-radius: 50%;
   color: #ffffff;
   display: inline-block;
@@ -227,11 +225,11 @@ code {
 }
 
 .bg-primary {
-  background-color: #6cbafa !important;
+  background-color: #6ACDE6 !important;
 }
 
 .bg-success {
-  background-color: #7eef88 !important;
+  background-color: #3B8754 !important;
 }
 
 .bg-info {
@@ -279,7 +277,7 @@ code {
 }
 
 .text-primary {
-  color: #6cbafa !important;
+  color: #6ACDE6 !important;
 }
 
 .text-warning {
@@ -287,7 +285,7 @@ code {
 }
 
 .text-success {
-  color: #7eef88 !important;
+  color: #d1e7dd !important;
 }
 
 .text-info {
@@ -345,11 +343,11 @@ code {
 }
 
 .label-primary {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .label-success {
-  background-color: #7eef88;
+  background-color: #d1e7dd;
 }
 
 .label-info {
@@ -384,11 +382,11 @@ code {
 }
 
 .badge-primary {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .badge-success {
-  background-color: #7eef88;
+  background-color: #d1e7dd;
 }
 
 .badge-info {
@@ -425,8 +423,8 @@ code {
 .pagination > .page-item.active > a, .pagination > .page-item.active > span,
 .pagination > .page-item.active > a:hover, .pagination > .page-item.active > span:hover,
 .pagination > .page-item.active > a:focus, .pagination > .page-item.active > span:focus {
-  background-color: #6cbafa;
-  border-color: #6cbafa;
+  background-color: #6ACDE6;
+  border-color: #6ACDE6;
 }
 
 .page-link:focus {
@@ -469,11 +467,11 @@ code {
 }
 
 .tabs li.tab a.active {
-  color: #6cbafa !important;
+  color: #6ACDE6 !important;
 }
 
 .tabs .indicator {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   bottom: 0;
   height: 2px;
   position: absolute;
@@ -509,7 +507,7 @@ code {
 }
 
 .tabs-vertical-env .nav.tabs-vertical li.active > a {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff !important;
   border: 0;
 }
@@ -525,7 +523,7 @@ code {
 }
 
 .nav.nav-tabs > li > a.active {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff !important;
   border: 0;
 }
@@ -548,7 +546,7 @@ code {
 }
 
 .nav.nav-tabs > li > a:hover, .nav.tabs-vertical > li > a:hover {
-  color: #6cbafa !important;
+  color: #6ACDE6 !important;
 }
 
 .tab-content {
@@ -634,12 +632,12 @@ code {
 }
 
 .alert-success {
-  color: #7eef88;
+  color: #0f5132;
   background-color: rgba(126, 239, 136, 0.15);
 }
 
 .alert-success .alert-link {
-  color: #51e95e;
+  color: #0f5132;
 }
 
 .alert-success hr {
@@ -708,7 +706,7 @@ code {
 }
 
 .list-group-item.active:hover .list-group-item-text {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 .list-group-item.active:focus {
@@ -719,11 +717,11 @@ code {
 }
 
 .list-group-item.active:focus .list-group-item-text {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 .list-group-item.active .list-group-item-text {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 .list-group-item {
@@ -751,15 +749,15 @@ code {
 }
 
 .list-group-item.active > .badge {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 .nav-pills > .active > a > .badge {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 .has-success .form-control {
-  border-color: #7eef88;
+  border-color: #d1e7dd;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -1313,7 +1311,7 @@ textarea.form-control {
 
 .responsive-utilities td.is-visible {
   background-color: #d9f3ee;
-  color: #7eef88;
+  color: #d1e7dd;
 }
 
 .icon-demo-content {
@@ -1333,7 +1331,7 @@ textarea.form-control {
 }
 
 .icon-demo-content .col-sm-6:hover i {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 @media print {
@@ -1345,7 +1343,7 @@ textarea.form-control {
 }
 
 /*
-Template Name: Hexzy - Bootstrap 4 Admin Dashboard
+Template Name: Tribus - Bootstrap 4 Admin Dashboard
 File: Components
 */
 /*
@@ -1363,6 +1361,9 @@ File: Components
 /* ==============
   Buttons
 ===================*/
+
+
+
 .btn {
   border-radius: 2px;
   padding: 6px 14px;
@@ -1399,8 +1400,8 @@ File: Components
 }
 
 .btn-primary {
-  background-color: #6cbafa !important;
-  border: 1px solid #6cbafa !important;
+  background-color: #6ACDE6 !important;
+  border: 1px solid #6ACDE6 !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active,
@@ -1411,8 +1412,8 @@ File: Components
 }
 
 .btn-success {
-  background-color: #7eef88 !important;
-  border: 1px solid #7eef88 !important;
+  background-color: #198754 !important;
+  border: 1px solid #198754 !important;
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open > .dropdown-toggle.btn-success {
@@ -1467,7 +1468,7 @@ File: Components
 }
 
 .btn-link:hover {
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 .fileupload {
@@ -1746,8 +1747,8 @@ File: Components
 }
 
 .checkbox-primary input[type="checkbox"]:checked + label::before {
-  background-color: #6cbafa;
-  border-color: #6cbafa;
+  background-color: #6ACDE6;
+  border-color: #6ACDE6;
 }
 
 .checkbox-primary input[type="checkbox"]:checked + label::after {
@@ -1782,8 +1783,8 @@ File: Components
 }
 
 .checkbox-success input[type="checkbox"]:checked + label::before {
-  background-color: #7eef88;
-  border-color: #7eef88;
+  background-color: #d1e7dd;
+  border-color: #d1e7dd;
 }
 
 .checkbox-success input[type="checkbox"]:checked + label::after {
@@ -1876,15 +1877,15 @@ File: Components
 }
 
 .radio-primary input[type="radio"] + label::after {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .radio-primary input[type="radio"]:checked + label::before {
-  border-color: #6cbafa;
+  border-color: #6ACDE6;
 }
 
 .radio-primary input[type="radio"]:checked + label::after {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .radio-danger input[type="radio"] + label::after {
@@ -1924,15 +1925,15 @@ File: Components
 }
 
 .radio-success input[type="radio"] + label::after {
-  background-color: #7eef88;
+  background-color: #d1e7dd;
 }
 
 .radio-success input[type="radio"]:checked + label::before {
-  border-color: #7eef88;
+  border-color: #d1e7dd;
 }
 
 .radio-success input[type="radio"]:checked + label::after {
-  background-color: #7eef88;
+  background-color: #d1e7dd;
 }
 
 select[multiple], select[size] {
@@ -2010,11 +2011,11 @@ select[multiple], select[size] {
 }
 
 .progress-bar-primary {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .progress-bar-success {
-  background-color: #7eef88;
+  background-color: #d1e7dd;
 }
 
 .progress-bar-info {
@@ -2076,12 +2077,12 @@ th {
 }
 
 table.focus-on tbody tr.focused th {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff;
 }
 
 table.focus-on tbody tr.focused td {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff;
 }
 
@@ -2108,7 +2109,7 @@ div#datatable-buttons_info {
 }
 
 table.dataTable th.focus, table.dataTable td.focus {
-  outline: 3px solid #6cbafa !important;
+  outline: 3px solid #6ACDE6 !important;
   outline-offset: -1px;
 }
 
@@ -2300,11 +2301,11 @@ div.DTS div.dataTables_scrollBody {
 }
 
 .ms-container .ms-selectable li.ms-hover {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .ms-container .ms-selection li.ms-hover {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .spinner-buttons.btn-group-vertical .btn {
@@ -2380,7 +2381,7 @@ div.DTS div.dataTables_scrollBody {
   background-color: transparent;
   border-color: transparent;
   border-radius: 4px;
-  color: #6cbafa;
+  color: #6ACDE6;
   text-decoration: none;
 }
 
@@ -2389,7 +2390,7 @@ div.DTS div.dataTables_scrollBody {
 }
 
 .datepicker table tr td.active, .datepicker table tr td.active:hover, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover {
-  background-color: #6cbafa !important;
+  background-color: #6ACDE6 !important;
   background-image: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2421,7 +2422,7 @@ div.DTS div.dataTables_scrollBody {
 }
 
 .select2-results .select2-highlighted {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
 }
 
 .select2-drop-active {
@@ -2575,7 +2576,7 @@ div.DTS div.dataTables_scrollBody {
   margin: 5px 7px;
   padding: 5px 5px;
   text-align: center;
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff !important;
 }
 
@@ -2608,7 +2609,7 @@ div.DTS div.dataTables_scrollBody {
 }
 
 /*
-Template Name: Hexzy - Bootstrap 4 Admin Dashboard
+Template Name: Tribus - Bootstrap 4 Admin Dashboard
 File: Pages
 */
 /*
@@ -2649,15 +2650,15 @@ File: Pages
 }
 
 .swal2-styled .swal2-confirm {
-  background-color: #6cbafa !important;
+  background-color: #6ACDE6 !important;
 }
 
 .swal2-icon.swal2-success .swal2-success-ring {
-  border-color: #7eef88 !important;
+  border-color: #d1e7dd !important;
 }
 
 .swal2-icon.swal2-success [class^=swal2-success-line] {
-  background: #7eef88 !important;
+  background: #d1e7dd !important;
 }
 
 /* ==============
@@ -2750,7 +2751,7 @@ File: Pages
 }
 
 .cd-timeline-img.cd-success {
-  background: #7eef88;
+  background: #d1e7dd;
 }
 
 .cd-timeline-img.cd-info {
@@ -2766,7 +2767,7 @@ File: Pages
 }
 
 .cd-timeline-img.cd-primary {
-  background: #6cbafa;
+  background: #6ACDE6;
 }
 
 .cd-timeline-img.cd-warning {
@@ -3004,7 +3005,7 @@ File: Pages
 }
 
 .lj-countdown {
-  color: #6cbafa;
+  color: #6ACDE6;
   margin-top: 40px;
   text-align: center;
 }
@@ -3053,12 +3054,12 @@ File: Pages
 }
 
 .portfolioFilter a:hover {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff;
 }
 
 .portfolioFilter a.current {
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   color: #ffffff;
 }
 
@@ -3139,7 +3140,7 @@ File: Pages
   color: #ffffff;
   font-size: 16px;
   line-height: 40px;
-  background: #6cbafa;
+  background: #6ACDE6;
   border-radius: 4px;
   padding: 10px 20px;
 }
@@ -3156,14 +3157,14 @@ File: Pages
   bottom: -15px;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
-  border-top: 16px solid #6cbafa;
+  border-top: 16px solid #6ACDE6;
 }
 
 .gmaps-overlay_arrow.below {
   top: -15px;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
-  border-bottom: 16px solid #6cbafa;
+  border-bottom: 16px solid #6ACDE6;
 }
 
 /* ==============
@@ -3240,7 +3241,7 @@ Invoice
 }
 
 #topnav .topbar-main {
-  background: #3e445e;
+  background:#6ACDE6;
 }
 
 #topnav .topbar-main .logo {
@@ -3443,7 +3444,7 @@ Invoice
   font-weight: 400;
   padding: 10px 0 10px;
   margin-top: -5px;
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   border-radius: 4px 4px 0 0;
 }
 
@@ -3577,7 +3578,7 @@ Invoice
 }
 
 .nav > li > a {
-  color: #ffffff !important;
+  color: #000000 !important;
   padding: 0px 15px;
   position: relative;
 }
@@ -3643,7 +3644,7 @@ Invoice
   font-weight: 400;
   padding: 10px 0 10px;
   margin-top: -5px;
-  background-color: #6cbafa;
+  background-color: #6ACDE6;
   border-radius: 4px 4px 0 0;
 }
 
@@ -3710,7 +3711,7 @@ body {
 }
 
 .container-fluid {
-  max-width: 1300px;
+  max-width: 1400px;
 }
 
 #topnav .navbar-custom {
@@ -3743,7 +3744,7 @@ body {
 
 #topnav .navigation-menu > li > a:hover, #topnav .navigation-menu > li > a:focus, #topnav .navigation-menu > li > a:active {
   background-color: transparent;
-  color: #6cbafa;
+  color: #6ACDE6;
 }
 
 #topnav .navigation-menu > li > a i {
@@ -3765,6 +3766,7 @@ body {
 
 .page-title-box {
   padding: 24px 0px;
+  margin-top: -20px;
 }
 
 /*
@@ -3785,10 +3787,10 @@ Responsive Menu
     margin-right: 10px;
   }
   #topnav .navigation-menu > li:hover a {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .navigation-menu > li:hover a i {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .navigation-menu > li .submenu {
     position: absolute;
@@ -3848,17 +3850,17 @@ Responsive Menu
     color: rgba(62, 68, 94, 0.8);
   }
   #topnav .navigation-menu > li .submenu li a:hover {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .navigation-menu > li > a {
     padding-top: 20px;
     padding-bottom: 20px;
   }
   #topnav .has-submenu.active a {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .has-submenu.active .submenu li.active > a {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .navbar-toggle {
     display: none;
@@ -3893,7 +3895,7 @@ Responsive Menu
     color: #3e445e;
   }
   #topnav .navigation-menu > li .submenu li a:hover {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .navigation-menu > li .submenu li.has-submenu > a:after {
     content: "\f140";
@@ -3905,7 +3907,7 @@ Responsive Menu
     display: block;
   }
   #topnav .navigation-menu > li .submenu.open > a {
-    color: #6cbafa;
+    color: #6ACDE6;
   }
   #topnav .navigation-menu > li .submenu .submenu {
     display: none;
@@ -3939,7 +3941,7 @@ Responsive Menu
   #topnav .submenu li.active > a,
   #topnav .navigation-menu > li > a:active,
   #topnav .navigation-menu > li > a:hover {
-    color: #6cbafa !important;
+    color: #6ACDE6 !important;
   }
   #navigation {
     position: absolute;
@@ -3998,7 +4000,7 @@ Responsive Menu
 }
 
 /*
-Template Name: Hexzy - Bootstrap 4 Admin Dashboard
+Template Name: Tribus - Bootstrap 4 Admin Dashboard
 File: Responsive
 */
 @media (min-width: 768px) and (max-width: 991px) {
