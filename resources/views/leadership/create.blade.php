@@ -6,6 +6,7 @@
     </x-slot>
     <x-jet-validation-errors class="mb-4" />
    
+    <x-alert></x-alert>
 
     <div class="row">
         <div class="col-sm-12">

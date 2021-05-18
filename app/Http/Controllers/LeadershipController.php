@@ -28,7 +28,7 @@ class LeadershipController extends Controller
     public function store(Request $request)
     {
         User::find($request->user)->roles()->attach($request->role);
-        return back()->with('success','Added successfully!');
+        return back()->with('success','Leader added successfully!');
     }
 
     

@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LeadershipController;
-use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +20,11 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::resource('user', UserController::class)->middleware('verified');
+
+Route::get('/home',[HomeController::class,'index'])->name('home');
+
+Route::resource('user', UserController::class)->middleware(['verified']);
 Route::resource('leadership', LeadershipController::class)->middleware('verified');
 
-Route::get('/dashboard', DashboardController::class)->name('dashboard')->middleware('verified');
+Route::get('/dashboard', DashboardController::class)->name('dashboard')->middleware(['verified','userrole']);
 

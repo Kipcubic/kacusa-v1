@@ -29,19 +29,16 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
 
-    public function getIsAdminAttribute()
+    public function getIsChairpersonAttribute()
     {
-        return $this->roles->pluck( 'name' )->contains( 'admin' );
+        return $this->roles->pluck( 'name' )->contains( 'chairperson' );
     }
 
-    public function getIsSuperAdminAttribute()
+    public function getIsLeaderAdminAttribute()
     {
-        return $this->roles->pluck( 'name' )->contains( 'superadmin' );
+        return $this->roles->pluck( 'name' )->contains( ['chairperson','vchairperson','secretary','vsecretary'] );
     }
-    public function getIsUserAttribute()
-    {
-        return $this->roles->pluck( 'name' )->contains( 'user' );
-    }
+   
 
     public function roles()
     {

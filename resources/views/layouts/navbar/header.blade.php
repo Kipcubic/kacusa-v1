@@ -101,17 +101,24 @@
 
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-
+                    @member
+                    <li class="has-submenu">
+                        <a href=" {{route('home')}} "><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    @endmember
+                    @leader
                     <li class="has-submenu">
                         <a href=" {{route('dashboard')}} "><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                     </li>
+
                     <li class="has-submenu">
                         <a href="{{route('user.index')}} "><i class="fas fa-users"></i> Members</a>
                     </li>
+                    
                     <li class="has-submenu">
                         <a href="{{route('leadership.index')}} "><i class="fas fa-users"></i> Leadership</a>
                     </li>
-
+                    @endleader
                 </ul>
                 <!-- End navigation menu -->
             </div>
