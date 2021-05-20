@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="title">
-        All users
+        All Members
     </x-slot>
     @section('css')
      <!-- DataTables -->
@@ -70,7 +70,7 @@
                                         {{$role->name}}
                                     @endforeach
                                     @else
-                                        No Role Attached
+                                        Member
                                     @endif
                                  </td>
                                 <td>{{$user->email}}</td>
