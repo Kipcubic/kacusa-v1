@@ -78,7 +78,7 @@
                                 <td> {{$user->created_at->diffForHumans()}} </td>
                                 <td class="text-center">
                                     {{-- <button type="button" class="btn btn-primary btn-sm"> <i class="ion ion-md-eye"></i></button> --}}
-                                    <a href=" {{route('user.edit', $user->id)}} " class="btn btn-info btn-sm " tabindex="-1" role="button" ><i class="ion ion-md-create"></i></a>
+                                    {{-- <a href=" {{route('user.edit', $user->id)}} " class="btn btn-info btn-sm " tabindex="-1" role="button" ><i class="ion ion-md-create"></i></a>
                                     <a  class="btn btn-sm btn-success" href="#" data-toggle="tooltip" title="Delete"
                                     onclick="if (confirm('Are you sure?')) { event.preventDefault();
                                         document.getElementById('user-id-{{$user->id}}').submit();}">
@@ -87,7 +87,7 @@
                                     <form id="user-id-{{$user->id}}" action="{{ route('user.destroy',$user->id)}}" method="POST" style="display:none">
                                         @csrf
                                         @method('DELETE')
-                                    </form>
+                                    </form> --}}
     
                                 </td>
                              
