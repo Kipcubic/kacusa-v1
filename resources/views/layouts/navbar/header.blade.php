@@ -5,8 +5,8 @@
             <!-- Logo-->
             <div>
                 <a href=" {{route('dashboard')}} " class="logo">
-                     <img src="{{ asset('assets/images/logo.png')}}" class="logo-lg" alt="" height="75">
-                    <img src="{{ asset('assets/images/logo.png')}}" class="logo-sm" alt="" height="75">
+                     <img src="{{ asset('assets/images/kacusa-logo.png')}}" class="logo-lg" alt="" height="75">
+                    <img src="{{ asset('assets/images/kacusa-logo.png')}}" class="logo-sm" alt="" height="75">
                 </a>
             </div>
             <!-- End Logo-->

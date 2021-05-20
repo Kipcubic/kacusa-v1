@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LeadershipController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,15 +17,17 @@ use App\Http\Controllers\LeadershipController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
     return redirect('/login');
 });
 
-
-Route::get('/home',[HomeController::class,'index'])->name('home');
+Route::get('/home',[HomeController::class,'index'])->name('home')->middleware('verified');
 
 Route::resource('user', UserController::class)->middleware(['verified']);
 Route::resource('leadership', LeadershipController::class)->middleware('verified');
 
-Route::get('/dashboard', DashboardController::class)->name('dashboard')->middleware(['verified','userrole']);
+Route::get('/user/membership/details',[ProfileController::class,'index'])->name('details');
+
+Route::get('/dashboard', DashboardController::class)->name('dashboard')->middleware(['verified','ensureisaleader']);
 

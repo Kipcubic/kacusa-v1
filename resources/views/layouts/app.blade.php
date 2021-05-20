@@ -66,7 +66,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            © 2019 - {{now('Y')}} NABO <span class="d-none d-md-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by Tribus-TSG</span>
+                            © 2019 - {{now()->format('Y')}} KACUSA <span class="d-none d-md-inline-block">  </span>
                         </div>
                     </div>
                 </div>
