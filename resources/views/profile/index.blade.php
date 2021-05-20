@@ -64,6 +64,13 @@
               </div>
             </div>
           </div>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">ID Number</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" name="id_number" value=" {{auth()->user()->id_number }} " required>
+            
+            </div>
+          </div>
 
           <div class="col-12">
             <label for="username" class="form-label">Email</label>
@@ -75,12 +82,21 @@
           <br>
           <p class="h6">Current Education Details</p>
           <hr>
+
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Course</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" name="course" value=" {{auth()->user()->course }} " required>
+            
+            </div>
+          </div>
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Institution</label>
               <input type="text" class="form-control" id="firstName" placeholder="" name="current_institution" value=" {{auth()->user()->current_institution }} " required>
             
             </div>
+          
   
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Admission Number</label>
@@ -91,7 +107,7 @@
           <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">Year of Study</label>
-                <input type="text" class="form-control" id="firstName" placeholder="0722xxxxx" name="year_of_study" value=" {{auth()->user()->year_of_study }} " required>
+                <input type="text" class="form-control" id="firstName" placeholder="Eg Year 1" name="year_of_study" value=" {{auth()->user()->year_of_study }} " required>
             
               </div>
     
@@ -101,6 +117,8 @@
              
               </div>
             </div>
+
+        
   
             
 

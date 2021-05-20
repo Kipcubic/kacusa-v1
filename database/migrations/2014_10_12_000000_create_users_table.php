@@ -27,6 +27,8 @@ class CreateUsersTable extends Migration
             $table->string('admission_number')->nullable();
             $table->string('year_of_study')->nullable();
             $table->string('campus')->nullable();
+            $table->string('course')->nullable();
+
 
     
             $table->string('email')->unique();

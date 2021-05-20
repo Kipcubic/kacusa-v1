@@ -23,6 +23,8 @@ class ProfileController extends Controller
     $user->lname=$request->lname;
     $user->village=$request->village;
     $user->phone_number=$request->phone_number;
+    $user->id_number=$request->id_number;
+    $user->course=$request->course;
     $user->current_institution=$request->current_institution;
     $user->campus=$request->campus;
     $user->admission_number=$request->admission_number;
