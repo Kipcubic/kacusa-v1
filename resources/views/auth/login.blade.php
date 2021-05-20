@@ -33,6 +33,8 @@
                         </div>
                     </div>
 
+                    
+
                     <div class="form-group">
                         <div class="col-12">
                             <div class="checkbox checkbox-primary">
@@ -43,19 +45,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group row  m-b-0">
+                        <div class="col-sm-7">
+                            <a href="" class="text-muted"><i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
+                        </div>
+                     
+                    </div>
 
                     <div class="form-group text-center m-t-40">
                         <div class="col-12">
                             <button class="btn btn-primary btn-block btn-lg waves-effect waves-light" type="submit">Log In</button>
                         </div>
                     </div>
-
-                    <div class="form-group row m-t-30 m-b-0">
-                        <div class="col-sm-7">
-                            <a href="" class="text-muted"><i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
+                    <div class="form-group row  m-b-0">
+                        <div class="col-sm-8">
+                            <a href=" {{route('register')}} " class="text-muted"><i class="fas fa-user-plus"></i> <small>New? Click here to register</small></a>
                         </div>
                      
                     </div>
+
+                 
                 </form>
             </div>
 
