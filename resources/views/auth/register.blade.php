@@ -9,6 +9,7 @@
                             <a href="index.html" class="logo logo-admin"><img src="assets/images/kacusa-logo.png" alt="" height="34"></a>
                     </div>
                     <h4 class="text-muted text-center m-t-0"><b>Registration</b></h4>
+                    <x-jet-validation-errors class="mb-4" />
 
                     <form class="form-horizontal m-t-20" action=" {{route('register')}} " method="POST">
                         @csrf
