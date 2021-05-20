@@ -16,6 +16,9 @@ class EnsureAllDetailsAreFilled
      */
     public function handle(Request $request, Closure $next)
     {
+        if(!auth()->user()->profile_complete){
+            return redirect('/user/membership/details');
+        }
         return $next($request);
     }
 }

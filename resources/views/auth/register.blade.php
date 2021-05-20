@@ -29,11 +29,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-12">
-                                <input class="form-control" type="text" required="" placeholder="Username">
-                            </div>
-                        </div>
+                   
 
                         <div class="form-group">
                             <div class="col-12">

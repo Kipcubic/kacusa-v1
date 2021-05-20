@@ -38,6 +38,13 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->roles->pluck( 'name' )->contains( ['chairperson','vchairperson','secretary','vsecretary'] );
     }
+
+    public function getProfileCompleteAttribute(){
+        return !empty($this->fname) && !empty($this->lname)  
+        && !empty($this->campus) && !empty($this->current_institution) 
+        && !empty($this->year_of_study) && !empty($this->phone_number) 
+        && !empty($this->village) && !empty($this->admission_number);
+    }
    
 
     public function roles()

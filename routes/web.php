@@ -22,12 +22,13 @@ Route::get('/', function () {
     return redirect('/login');
 });
 
-Route::get('/home',[HomeController::class,'index'])->name('home')->middleware('verified');
+Route::get('/home',[HomeController::class,'index'])->name('home')->middleware(['verified','detailsfilled']);
 
 Route::resource('user', UserController::class)->middleware(['verified']);
 Route::resource('leadership', LeadershipController::class)->middleware('verified');
 
 Route::get('/user/membership/details',[ProfileController::class,'index'])->name('details');
+Route::post('/user/membership/details/update',[ProfileController::class,'update'])->name('details.save');
 
 Route::get('/dashboard', DashboardController::class)->name('dashboard')->middleware(['verified','ensureisaleader']);
 

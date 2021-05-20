@@ -22,7 +22,13 @@ class CreateUsersTable extends Migration
             $table->date('dob')->nullable();
             $table->string('id_number')->nullable();
             $table->string('phone_number')->nullable();
-        
+            $table->string('current_institution')->nullable();
+            $table->string('institution_status')->nullable();
+            $table->string('admission_number')->nullable();
+            $table->string('year_of_study')->nullable();
+            $table->string('campus')->nullable();
+
+    
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
