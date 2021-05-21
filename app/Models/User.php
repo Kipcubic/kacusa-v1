@@ -10,6 +10,8 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -18,6 +20,9 @@ class User extends Authenticatable implements MustVerifyEmail
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
+
+    use SoftDeletes;
+
 
     protected $connection = 'mysql';
  
@@ -34,9 +39,9 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->roles->pluck( 'name' )->contains( 'chairperson' );
     }
 
-    public function getIsLeaderAdminAttribute()
+    public function getIsLeaderAttribute()
     {
-        return $this->roles->pluck( 'name' )->contains( ['chairperson','vchairperson','secretary','vsecretary'] );
+        return $this->roles->count()>0;
     }
 
     public function getProfileCompleteAttribute(){

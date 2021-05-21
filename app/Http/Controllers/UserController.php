@@ -66,21 +66,19 @@ class UserController extends Controller
         return redirect('/user')->with('success','User Added Successully');
     }
 
-   
-    public function show($id)
+
+    public function show(User $user)
     {
-        //
+
+        return view('users.show',[
+            'user'=>$user
+        ]);
     }
 
     public function edit(User $user)
     {
 
-        if(Auth::user()->is_superadmin){
-            $roles=Role::all();
-
-        } elseif(Auth::user()->is_admin){
-            $roles=Role::where('name','admin')->orWhere('name','user')->get();
-        }
+        $roles=Role::all();
 
         return view('users.edit',[
             'user'=>$user,

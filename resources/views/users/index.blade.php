@@ -88,6 +88,7 @@
                                         @csrf
                                         @method('DELETE')
                                     </form> --}}
+                                    <a class="btn btn-sm btn-success" href=" {{route('user.show',$user->id)}} "> View</a>
     
                                 </td>
                              

@@ -20,9 +20,9 @@
                     @csrf
                     @method('PATCH')
                       <div class="form-group row">
-                          <label class="col-sm-2 control-label" for="example-text-input">Name</label>
+                          <label class="col-sm-2 control-label" for="example-text-input">Full Name</label>
                           <div class="col-sm-10">
-                              <input type="text" class="form-control"  id="example-text-input" name="name" value=" {{$user->name}} " placeholder="Client Full Name" value=" {{old('name')}} ">
+                              <input type="text" class="form-control"  id="example-text-input" name="name" value=" {{$user->full_name}} " placeholder="Full Name"  disabled>
                           </div>
                       </div>
                       <div class="form-group row">
