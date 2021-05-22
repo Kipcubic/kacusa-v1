@@ -10,13 +10,15 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Access\Gate;
 
 class UserController extends Controller
 {
    
     public function index()
     {
-        
+        $this->authorize('viewAny',Auth::user());
+
         $users=User::all();
         return view('users.index',
         [
@@ -26,14 +28,11 @@ class UserController extends Controller
 
     public function create()
     {
-        if(Auth::user()->is_superadmin){
-            $roles=Role::all();
 
-        } elseif(Auth::user()->is_admin){
-            $roles=Role::all()->except(3);
-        } else {
-            abort(404);
-        }
+        $this->authorize('view',Auth::user());
+
+
+        $roles=Role::all();
         return view('users.create',[
             'roles'=>$roles
         ]);
@@ -42,6 +41,9 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
+
+
+        $this->authorize('create',Auth::user());
 
         $validated = $request->validate([
             'name'=>'required',
@@ -57,8 +59,7 @@ class UserController extends Controller
         $user->password=Hash::make($password);
         $user->save();
 
-
-    
+   
         $user->roles()->attach($request->role);
 
         // Send Email To Clients With Credentials
@@ -69,6 +70,7 @@ class UserController extends Controller
 
     public function show(User $user)
     {
+        $this->authorize('view',Auth::user());
 
         return view('users.show',[
             'user'=>$user
@@ -77,6 +79,10 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
+
+
+        $this->authorize('create',Auth::user());
+
 
         $roles=Role::all();
 
@@ -92,6 +98,8 @@ class UserController extends Controller
    
     public function update(Request $request,User $user)
     {
+        $this->authorize('update',Auth::user());
+
         $user->update([
             'name'=>$request->name,
             'email'=>$request->email
@@ -103,7 +111,8 @@ class UserController extends Controller
     }
 
     public function destroy(User $user)
-    {
+    {        $this->authorize('delete',Auth::user());
+
             $user->delete();
             return redirect('/user')->with('success','User Deleted!');    
     }
